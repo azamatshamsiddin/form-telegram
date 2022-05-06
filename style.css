@@ -10,5 +10,16 @@ body{
 }
 
 .form {
-  max-width: 30rem;
+  width: 30rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-control{
+  width: 30rem;
+}
+.btn-submit{
+  margin-left: auto;
 }
