@@ -16,9 +16,9 @@ form.addEventListener("submit", (e) => {
 	let api = new XMLHttpRequest()
 	api.open("GET", url, true)
 	api.send();
-	fullName.innerHTML = null
-	phone.innerHTML = null
-	description.innerHTML = null
+	fullName.value = null
+	phone.value = null
+	description.value = null
 	
 	console.log("Message successfully sent")
 })
