@@ -61,7 +61,7 @@ form.addEventListener('submit', e => {
 	let userInfo = `User:%0A - <b>Fullname: </b> ${userData[0]}. %0A - <b>Phone number: </b> ${userData[1]}. %0A - <b>Message: </b> ${userData[2]}.`
 	
 	
-	const chat_id = -1001620327414; // id : name of Messages channel
+	const chat_id = -1001656014571; // id : name of Messages channel
 	let url = `https://api.telegram.org/bot${TOKEN_BOT}/sendMessage?chat_id=${chat_id}&text=${userInfo}&parse_mode=html`
 	
 	let api = new XMLHttpRequest()
