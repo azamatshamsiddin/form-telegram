@@ -19,7 +19,9 @@
   </div>
   <div class="mb-3">
     <label for="phoneInput" class="form-label">Phone number</label>
-    <input type="tel" class="form-control form-phone" pattern="^(?:\d{10,12}|\+\d{10,12}|\w+@\w+\.\w{2,4})$" id="phoneInput">
+    <input type="tel" class="form-control form-phone"
+           pattern="^(?:(?:\(?(?:00|\+)([1-4]\d\d|[1-9]\d?)\)?)?[\-\.\ \\\/]?)?((?:\(?\d{1,}\)?[\-\.\ \\\/]?){0,})(?:[\-\.\ \\\/]?(?:#|ext\.?|extension|x)[\-\.\ \\\/]?(\d+))?$"
+           id="phoneInput">
   </div>
   <div class="mb-3">
     <label for="textArea" class="form-label">Description</label>
