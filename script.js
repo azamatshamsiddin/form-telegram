@@ -13,13 +13,11 @@ form.addEventListener("submit", (e) => {
 	let my_text = `Result is:%0A - <b>User fullname: </b> ${fullNameVal}. %0A - <b>User phone number: </b> ${phone}. %0A - <b>User message: </b> ${description}.`;
 	const chat_id = -1001317139562;
 	let url = `https://api.telegram.org/bot${TOKEN_BOT}/sendMessage?chat_id=${chat_id}&text=${my_text}&parse_mode=html`
-	fullName.innerHTML = null
-	phone.innerHTML = null
-	description.innerHTML = null
+	
 	let api = new XMLHttpRequest()
 	api.open("GET", url, true)
 	api.send();
-
+	form.reset()
 	
 	console.log("Message successfully sent")
 })
